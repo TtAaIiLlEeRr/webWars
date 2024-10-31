@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Wars Shopping Cart</title>
+    <link rel="stylesheet" href="style-koncept.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Star Wars Shopping Cart</h1>
+        <div class="cart">
+            <h2>Your Cart</h2>
+            <div id="cart-items"></div>
+            <div class="cart-summary">
+                <p>Total Items: <span id="total-items">0</span></p>
+                <p>Total Price: $<span id="total-price">0.00</span></p>
+            </div>
+        </div>
+        <div class="products">
+            <h2>Products</h2>
+            <div class="product" data-name="Darth Vader" data-price="29.99">
+                <img src="darth-vader.jpg" alt="Darth Vader">
+                <h3>Darth Vader</h3>
+                <label for="size">Size:</label>
+                <select class="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <div class="product" data-name="Stormtrooper" data-price="24.99">
+                <img src="stormtrooper.jpg" alt="Stormtrooper">
+                <h3>Stormtrooper</h3>
+                <label for="size">Size:</label>
+                <select class="size">
+                    <option value="S">S</option>
+                    <option value="M">M</option>
+                    <option value="L">L</option>
+                </select>
+                <button class="add-to-cart">Add to Cart</button>
+            </div>
+            <!-- Add more products as needed -->
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
+
